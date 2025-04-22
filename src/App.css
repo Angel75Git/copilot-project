@@ -1,0 +1,311 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app {
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+.app.dark-mode {
+  background-color: #121212; /* Darker background for dark mode */
+  color: #b0b0b0; /* Slightly darker text color for better readability */
+}
+
+.app.dark-mode h1 {
+  color: #ff9800; /* Vibrant orange for headings in dark mode */
+  text-shadow: 2px 2px #ff5722;
+}
+
+.app.dark-mode .chicken-card {
+  background-color: #1e1e1e; /* Darker card background */
+  border: 1px solid #333; /* Subtle border for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow for dark mode */
+}
+
+.app.dark-mode .chicken-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhanced hover effect */
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff4500;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px #ffa07a;
+}
+
+.selector-meal {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Add spacing between label and select */
+}
+
+.selector-meal label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff4500;
+}
+
+.selector-meal select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #ff4500;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.selector-meal select:hover {
+  border-color: #e63900;
+  box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+}
+
+.selector-meal select:focus {
+  outline: none;
+  border-color: #e63900;
+  box-shadow: 0 0 8px rgba(255, 69, 0, 0.8);
+}
+
+.chicken-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.chicken-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chicken-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.chicken-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.chicken-card h2 {
+  font-size: 1.5rem;
+  color: #ff4500;
+}
+
+.chicken-card p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.chicken-card button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.chicken-card button:hover {
+  background-color: #e63900;
+}
+
+.meal-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.meal-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.meal-info {
+  flex: 1;
+}
+
+.meal-info h2 {
+  font-size: 1.5rem;
+  color: #ff4500;
+  margin: 0;
+}
+
+.meal-info p {
+  margin: 0.5rem 0;
+}
+
+.meal-time {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+.meal-time span {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.meal-card button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem; /* Add spacing between buttons */
+}
+
+.meal-card button:last-child {
+  margin-right: 0; /* Remove margin for the last button */
+}
+
+.meal-card button:hover {
+  background-color: #e63900;
+}
+
+.meal-card p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.meal-card p:nth-of-type(2) {
+  font-weight: bold;
+  color: #ff4500;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Toggle Switch Styles */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem; /* Add spacing between toggle and text */
+}
+
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.toggle-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: '';
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle-input:checked + .toggle-slider {
+  background-color: #ff4500;
+}
+
+.toggle-input:checked + .toggle-slider:before {
+  transform: translateX(25px);
+}
+
+/* Toggle Text Styles */
+.toggle-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff4500;
+}
+
+.app.dark-mode .toggle-text {
+  color: #ff9800; /* Match dark mode heading color */
+}
