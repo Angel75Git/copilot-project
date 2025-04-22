@@ -12,7 +12,7 @@ function MealKitchen({ recipes, setRecipes, onRemove }) {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=chicken')
+        const response = await fetch('https://www.themealdb.com/api/json/v1/1/search.php?s')
         if (!response.ok) {
           throw new Error('Failed to fetch recipes')
         }

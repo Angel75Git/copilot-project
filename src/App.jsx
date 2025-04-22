@@ -1,7 +1,7 @@
 /*
-  * Chicken Recipe App
+  * Recipe App
   * This React application fetches chicken recipes from an API and allows users to filter and view them.
-  * *Displays chicken recipies for students to make
+  * *Displays recipies for students to make
   * features: show more info about the recipe, show a list of ingredients, and show a picture of the recipe
   * *Allows users to remove recipes they are not interested in
   * *Includes a dark mode toggle for better user experience
@@ -50,8 +50,8 @@ function App() {
     <div className={darkMode ? 'app dark-mode' : 'app'}>
       {/* Header section with the title and dark mode toggle */}
       <header>
-        <h1>Got Some Chicken?</h1>
-        <h1>Chicken Recipes for College Students</h1>
+        <h1>Hungry?</h1>
+        <h1>Recipes for College Students</h1>
         <div className="toggle-container">
           {/* Toggle switch for light/dark mode */}
           <label className="toggle-label">
